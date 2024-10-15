@@ -1,0 +1,23 @@
+body{
+    background-color: #F0F0F0;
+}
+
+:root{
+    --text-color :#E2621C;
+    --text-color2 :#630F71;
+}
+.t-color{
+    color: var(--text-color);
+}
+.t2-color{
+    color: var(--text-color2);
+}
+.bg{
+    background-color: var(--text-color2);
+}
+.bg:hover{
+    background-color: var(--text-color2) !important;
+}
+.cursor{
+    cursor: pointer;
+}

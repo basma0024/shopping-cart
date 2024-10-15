@@ -1,0 +1,71 @@
+:root{
+    --text-color :#E2621C;
+    --grayS-color: #484848;
+}
+
+
+.product{
+    position: relative;
+}
+
+body{
+    background-color: #F0F0F0;
+
+
+}
+
+img{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    
+    
+}
+.toast-body{
+    z-index: 999 ;
+}
+
+.product-info{
+    background-color:white;
+    padding: 20px;
+    padding-top: 150px;
+    position: relative;
+    top: -15%;
+    left:-15%;
+    border-radius: 12px;
+    box-shadow: 0 0 13px 8px #95959524;
+
+}
+.cart{
+    border-top: 2px solid black;
+}
+
+.product-name{
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.product-price{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.product-desc{
+    color: var(--grayS-color);
+    font-size: 15px;
+    text-transform: capitalize;
+
+
+}
+.title{
+    color: var(--text-color);
+    font-weight: bolder;
+    font-size: 40px;
+}

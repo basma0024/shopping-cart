@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping website</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-4 fst-italic fs-bold fw-medium" href="#">AmitieAccessories</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"  onclick="goToCart();">Cart</a>
+              </li>
+             
+            </ul>
+            <div class="d-flex" role="search">
+             <button class="btn btn-success me-1" onclick="location.href='login/login.html'" >login</button>
+             <button class="btn btn-danger" onclick="logOut();">logout</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      
+    
+
+         <section class="m-5">
+          <div class="container d-flex justify-content-center ">
+            <div class="alert alert-danger px-5 d-none" role="alert">
+              you should <a href="login/login.html" class="alert-link">log in</a> first
+            </div>
+          </div>
+          <h1 class="text-center title">Our Products</h1>
+          
+          <div class="container my-5 " id="container-products" >
+            <div class="row ">
+            <div class="col-lg-3 col-md-6 col-sm-6  product" >
+              <img src="imgs/photo_2024-10-08_16-56-18.jpg" class="z-1" >
+
+              <div class="product-info text-start ">
+                <h2 class="product-name">estella necklace</h2>
+                <h3 class="product-price">150$</h3>
+                <p class="product-desc">necklace</p>
+                
+                <div class="cart">
+                  <button class="btn btn-success mt-3" onclick="addProduct('estella necklace', 150, 'necklace','../imgs/photo_2024-10-08_16-56-18.jpg');">add to cart</button>
+                </div>
+
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 product position-relative">
+              <img src="imgs/photo_2024-10-08_16-56-20.jpg" class="z-1" >
+
+              <div class="product-info text-start ">
+                <h2 class="product-name">world necklace</h2>
+                <h3 class="product-price">150$</h3>
+                <p class="product-desc">necklace</p>
+                
+                <div class="cart">
+                  <button class="btn btn-success mt-3" onclick="addProduct('world necklace', 150, 'necklace','../imgs/photo_2024-10-08_16-56-20.jpg');">add to cart</button>
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 product">
+              <img src="imgs/photo_2024-10-08_16-56-21 (2).jpg" class="z-1" >
+
+              <div class="product-info text-start ">
+                <h2 class="product-name">cactus necklace</h2>
+                <h3 class="product-price">130$</h3>
+                <p class="product-desc">necklace</p>
+                
+                <div class="cart">
+                  <button class="btn btn-success mt-3" onclick="addProduct('cactus necklace', 130, 'necklace','../imgs/photo_2024-10-08_16-56-21 (2).jpg');">add to cart</button>
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 product">
+              <img src="imgs/photo_2024-10-08_16-56-21.jpg" class="z-1" >
+
+              <div class="product-info text-start ">
+                <h2 class="product-name">enough necklace</h2>
+                <h3 class="product-price">200$</h3>
+                <p class="product-desc">necklace</p>
+                
+                <div class="cart">
+                  <button class="btn btn-success mt-3" onclick="addProduct('enougn necklace', 200, 'necklace','../imgs/photo_2024-10-08_16-56-21.jpg');">add to cart</button>
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 product">
+              <img src="imgs/photo_2024-10-08_16-56-22 (2).jpg" class="z-1" >
+
+              <div class="product-info text-start ">
+                <h2 class="product-name">mountains necklace</h2>
+                <h3 class="product-price">110$</h3>
+                <p class="product-desc">necklace</p>
+                
+                <div class="cart">
+                  <button class="btn btn-success mt-3" onclick="addProduct('mountains necklace', 110, 'necklace','../imgs/photo_2024-10-08_16-56-22 (2).jpg');">add to cart</button>
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 product">
+              <img src="imgs/photo_2024-10-08_16-56-22 (3).jpg" class="z-1" >
+
+              <div class="product-info text-start ">
+                <h2 class="product-name">serpent ring</h2>
+                <h3 class="product-price">100$</h3>
+                <p class="product-desc">ring</p>
+                
+                <div class="cart">
+                  <button class="btn btn-success mt-3" onclick="addProduct('serpent ring', 100, 'ring','../imgs/photo_2024-10-08_16-56-22 (3).jpg');">add to cart</button>
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 product">
+              <img src="imgs/photo_2024-10-08_16-56-22.jpg" class="z-1" >
+
+              <div class="product-info text-start ">
+                <h2 class="product-name">layered necklace</h2>
+                <h3 class="product-price">200$</h3>
+                <p class="product-desc">necklace</p>
+                
+                <div class="cart">
+                  <button class="btn btn-success mt-3" onclick="addProduct('layered necklace', 200, 'layered','../imgs/photo_2024-10-08_16-56-22.jpg');">add to cart</button>
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 product">
+              <img src="imgs/photo_2024-10-08_16-56-23.jpg" class="z-1" >
+
+              <div class="product-info text-start ">
+                <h2 class="product-name">butterfly necklace</h2>
+                <h3 class="product-price">150$</h3>
+                <p class="product-desc">necklace</p>
+                
+                <div class="cart">
+                  <button class="btn btn-success mt-3" onclick="addProduct('butterfly necklace', 150, 'necklace','../imgs/photo_2024-10-08_16-56-23.jpg');">add to cart</button>
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 product">
+              <img src="imgs/photo_2024-10-08_16-56-23 (3).jpg" class="z-1" >
+
+              <div class="product-info text-start ">
+                <h2 class="product-name">cloud necklace</h2>
+                <h3 class="product-price">160$</h3>
+                <p class="product-desc">necklace</p>
+                
+                <div class="cart">
+                  <button class="btn btn-success mt-3" onclick="addProduct('cloud necklace', 160, 'necklace','../imgs/photo_2024-10-08_16-56-23 (3).jpg');">add to cart</button>
+                </div>
+
+
+              </div>
+
+            </div>
+             <div class="col-lg-3 col-md-6 col-sm-6 product">
+              <img src="imgs/photo_2024-10-08_18-03-36.jpg" class="z-1" >
+
+              <div class="product-info text-start ">
+                <h2 class="product-name">worthy necklace</h2>
+                <h3 class="product-price">150$</h3>
+                <p class="product-desc">necklace</p>
+                
+                <div class="cart">
+                  <button class="btn btn-success mt-3" onclick="addProduct('worthy necklace', 150, 'necklace','../imgs/photo_2024-10-08_18-03-36.jpg');">add to cart</button>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+      </div>
+        </section>
+
+
+        <div class="position-fixed bottom-0 end-0 mb-2 z-3 ">
+          <div class="toast align-items-center text-bg-success border-0 " id="toaster" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="d-flex ">
+                <div class="toast-body " id="toasterMsg">
+                  Hello, world! This is a toast message.
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+            </div>
+      </div>
+    
+   
+
+   
+    <script src="js/main.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

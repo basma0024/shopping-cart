@@ -6,3 +6,6 @@
     color: #E2621C;
 
 }
+.card,.card-body{
+    border-radius: 1rem;
+}

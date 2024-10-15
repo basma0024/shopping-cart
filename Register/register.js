@@ -89,7 +89,7 @@ document.querySelector('.signUp').addEventListener('click', function (e) {
     e.preventDefault(); 
     if (nameInput.dataset.valid === 'true' && emailInput.dataset.valid === 'true' && phoneInput.dataset.valid === 'true' && passInput.dataset.valid === 'true' && repassInput.dataset.valid === 'true') {
         saveUserData();
-        window.location.href = '../index.html'; 
+        window.location.href = '../login/login.html'; 
     }
 });
 

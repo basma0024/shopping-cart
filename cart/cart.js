@@ -16,13 +16,13 @@ function displayCartProducts() {
         box += `
         <div class="row mb-4 d-flex justify-content-between align-items-center p-5">
             <div class="col-md-2 col-lg-2 col-xl-2">
-                <img src="${item.Image}" class="img-fluid rounded-3" alt="${item.code}">
+                <img src="${item.Image}" class="img-fluid rounded-3 mb-3" alt="${item.code}">
             </div>
             <div class="col-md-3 col-lg-3 col-xl-3">
-                <h6 class="t-color fw-bold fs-5">${item.code}</h6>
-                <h6 class="mb-0 text-dark">${item.Description}</h6>
+                <h6 class="t-color fw-bold fs-5 mb-3">${item.code}</h6>
+                <h6 class="mb-0 text-dark mb-3">${item.Description}</h6>
             </div>
-            <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+            <div class="col-md-3 col-lg-3 col-xl-2 d-flex mb-3">
                 <button class="btn btn-link px-1" onclick="changeQuantity(${index}, -1)">
                     <i class="fas fa-minus"></i>
                 </button>
@@ -35,7 +35,7 @@ function displayCartProducts() {
                 <h6 class="mb-0">${(item.Price * (item.quantity || 1)).toFixed(2)}$</h6>
             </div>
             <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                <button class="btn btn-danger" onclick="removeProduct(${index})">Remove</button>
+                <button class="btn btn-danger mt-2" onclick="removeProduct(${index})">Remove</button>
             </div>
         </div>
         `;
